@@ -115,15 +115,12 @@ body {
   color: var(--accent-color);
 }
 .nav-icon {
-  display: flex;
-  align-items: center;
   fill: currentColor;
   margin-right: 10px;
 }
 .header-mail {
   display: flex;
   align-items: center;
-  fill: currentColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -133,7 +130,6 @@ body {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .header-tel {
@@ -393,10 +389,16 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border-color: var(--accent-color);
+}
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list-item-icon {
+.clients-list-item-icon:hover,
+.clients-list-item-icon:focus {
+  fill: var(--accent-color);
 }
 .footer {
   background-color: var(--background-color);
