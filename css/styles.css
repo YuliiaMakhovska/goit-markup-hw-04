@@ -185,8 +185,10 @@ body {
 }
 .button:hover,
 .button:focus {
-  background-color: var(--accent-color);
   color: var(--main-btn-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .button {
   font-family: inherit;
@@ -196,8 +198,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--second-btn-color);
-  background-color: var(--background-btn-color);
+  color: var(--main-btn-color);
   cursor: pointer;
   border-radius: 4px solid var(--accent-color);
   border-color: transparent;
@@ -205,6 +206,11 @@ body {
   padding-bottom: 6px;
   padding-left: 32px;
   padding-right: 32px;
+}
+.hero-button {
+  color: var(--main-btn-color);
+  background-color: var(--accent-color);
+  border-radius: 4px solid var(--accent-color);
 }
 .features {
   padding-top: 94px;
@@ -257,6 +263,9 @@ body {
 }
 .after-title {
   display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 75px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -389,6 +398,9 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.clients-list-item-icon {
+  fill: #afb1b8;
+}
 .clients-list-item:hover,
 .clients-list-item:focus {
   border-color: var(--accent-color);
@@ -396,8 +408,8 @@ body {
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list-item-icon:hover,
-.clients-list-item-icon:focus {
+.clients-list-item-link:hover .clients-list-item-icon {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 .footer {
@@ -493,6 +505,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
   letter-spacing: 0.03em;
   color: var(--second-btn-color);
   cursor: pointer;
@@ -506,7 +519,7 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   background: #ffffff;
-  border: 1px solid #eeeeee;
+  cursor: pointer;
 }
 .description {
   padding-top: 20px;
