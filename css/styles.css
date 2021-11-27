@@ -388,7 +388,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.clients-list-item {
+.clients-list-item-link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -398,17 +398,10 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list-item-icon {
-  fill: #afb1b8;
-}
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border-color: var(--accent-color);
-}
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list-item-link:hover .clients-list-item-icon {
+.clients-list-item-link:hover {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
