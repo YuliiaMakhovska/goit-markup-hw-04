@@ -401,8 +401,13 @@ body {
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.clients-list-item-icon {
+  fill: #afb1b8;
+}
 .clients-list-item-link:hover {
   border-color: var(--accent-color);
+}
+.clients-list-item-link:hover .clients-list-item-icon {
   fill: var(--accent-color);
 }
 .footer {
